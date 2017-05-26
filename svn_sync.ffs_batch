@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FreeFileSync XmlFormat="3" XmlType="BATCH">
+    <MainConfig>
+        <Comparison>
+            <Variant>Content</Variant>
+            <Symlinks>Exclude</Symlinks>
+        </Comparison>
+        <SyncConfig>
+            <Variant>Mirror</Variant>
+            <CustomDirections>
+                <LeftOnly>right</LeftOnly>
+                <RightOnly>none</RightOnly>
+                <LeftNewer>right</LeftNewer>
+                <RightNewer>none</RightNewer>
+                <Different>right</Different>
+                <Conflict>none</Conflict>
+            </CustomDirections>
+            <DetectMovedFiles>false</DetectMovedFiles>
+            <DeletionPolicy>RecycleBin</DeletionPolicy>
+            <VersioningFolder Style="Replace"/>
+        </SyncConfig>
+        <GlobalFilter>
+            <Include>
+                <Item>*</Item>
+            </Include>
+            <Exclude>
+                <Item>\System Volume Information\</Item>
+                <Item>\$Recycle.Bin\</Item>
+                <Item>\RECYCLER\</Item>
+                <Item>\RECYCLED\</Item>
+                <Item>*\desktop.ini</Item>
+                <Item>*\thumbs.db</Item>
+                <Item>*\target\</Item>
+                <Item>*.class</Item>
+                <Item>\.project</Item>
+                <Item>*.iml;</Item>
+                <Item>*\.classpath</Item>
+                <Item>*\.project</Item>
+                <Item>*\.settings</Item>
+                <Item>*\*.log.*</Item>
+                <Item>\itbrs-filefront\log.base_IS_UNDEFINED\alarm\*</Item>
+                <Item>*\instance.id_IS_UNDEFINED\*</Item>
+                <Item>*\.git\*</Item>
+                <Item>*\log.base_IS_UNDEFINED\*</Item>
+                <Item>*\.svn\*</Item>
+            </Exclude>
+            <TimeSpan Type="None">0</TimeSpan>
+            <SizeMin Unit="None">0</SizeMin>
+            <SizeMax Unit="None">0</SizeMax>
+        </GlobalFilter>
+        <FolderPairs>
+            <Pair>
+                <Left>D:\src\itbrs\rk_svn\trunk\code</Left>
+                <Right>D:\src\itbrs\svn_t1</Right>
+            </Pair>
+        </FolderPairs>
+        <OnCompletion/>
+    </MainConfig>
+    <BatchConfig>
+        <HandleError>Stop</HandleError>
+        <ShowProgress>false</ShowProgress>
+        <LogfileFolder Limit="-1">D:\program\tools\FreeFileSyncPortable\log</LogfileFolder>
+    </BatchConfig>
+</FreeFileSync>
